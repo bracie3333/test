@@ -1,0 +1,3 @@
+[submodule "thirdparty/vsomeip"]
+	path = thirdparty/vsomeip
+	url = https://github.com/COVESA/vsomeip.git
