@@ -12,9 +12,10 @@ void Greetings(int8_t value)
     }
 }
 
-int main()
+int main(int argc, char *argv[])
 {
-    int8_t array[10] = {0};
+    int num = argc - 1;
+    int8_t array[num] = {0};
 
     for (int i = 0; i < sizeof(array) / sizeof(int8_t); i++)
     {
@@ -27,7 +28,10 @@ int main()
 
     for (int i = 0; i < sizeof(array) / sizeof(int8_t); i++)
     {
-        Greetings(array[i]);
+        if (argv != 0)
+        {
+            Greetings(array[i]);
+        }
     }
 
     return 0;
